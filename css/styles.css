@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    scroll-snap-type: y mandatory;
+}
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 10;
+}
+header div{
+    height: 100%;
+}
+#header-name{
+    /*background-color: lightsalmon;*/
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    align-items: center;
+    font-family: 'Goldman', sans-serif;
+    font-size: 1.4rem;
+}
+#header-contact{
+    /*background-color: lightgreen;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+#header-contact ion-icon{
+    font-size: 30px;
+}
+#header-email{
+    /*background-color: lightpink;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+#header-menu{
+    /*background-color: lightblue;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+#header-menu ion-icon{
+    font-size: 40px;
+}
+@media all and (max-width: 575px){
+    #header-email {
+        display: none;
+    }
+    #header-contact{
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 767px) {
+    #header-email {
+        display: none;
+    }
+}
+
+/*Nav bar*/
+
+nav{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    right: 0;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 20px;
+    z-index: 11;
+    padding-left: 20px;
+}
+.nav-visible{
+    opacity: 1;
+    visibility: visible;
+    animation-name: nav-visible;
+    animation-duration: 0.6s;
+}
+@keyframes nav-visible {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.nav-invisible{
+    opacity: 0;
+    visibility: hidden;
+    animation-name: nav-invisible;
+    animation-duration: 0.6s;
+}
+@keyframes nav-invisible {
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+nav span a{
+    padding-bottom: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #999999;
+}
+nav span a:hover{
+    color: black;
+}
+nav div ion-icon{
+    font-size: 40px;
+    color: black;
+}
+#close-icon-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 18px;
+}
+
+/*Links*/
+
+#links{
+    position: fixed;
+    /*background-color: yellow;*/
+    height: 180px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+#links div{
+    height: 33.33%;
+    padding-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#links div ion-icon{
+    font-size: 30px;
+    color: #999999;
+}
+#links div ion-icon:hover{
+    color: black;
+}
+
+/*Pages*/
+
+#page-1, #page-2, #page-3{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    background-image: url("../img/bg-img-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*First Page*/
+
+#page-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#description-container{
+    position: relative;
+    height: 50vh;
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#profile-pic-container{
+    position: relative;
+    height: 700px;
+    /*background-color: green;*/
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile-pic-container img{
+    width: 700px;
+    height: 700px;
+    border-radius: 100%;
+}
+#first-name, #last-name{
+    font-family: 'Goldman', sans-serif;
+    font-size: 60px;
+    color: #b9ac57;
+}
+#full-name{
+    font-family: 'Goldman', sans-serif;
+    font-size: 60px;
+    color: #b9ac57;
+    display: none;
+}
+#role{
+    padding-top: 30px;
+    font-family: 'Goldman', sans-serif;
+    font-size: 27px;
+    color: black;
+}
+#description{
+    padding-top: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.61);
+}
+#mobile-text{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.61);
+    display: none;
+}
+@media all and (max-width: 1399px) {
+    #first-name,#last-name {
+        font-size: 47.5px;
+    }
+    #role{
+        padding-top: 5px;
+        font-size: 21px;
+    }
+    #description{
+        padding-top: 10px;
+        font-size: 15.5px;
+    }
+    #profile-pic-container{
+        width: 500px;
+        height: 500px;
+    }
+    #profile-pic-container img{
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+    }
+}
+@media all and (max-width: 1199px) {
+    #first-name,#last-name {
+        font-size: 49px;
+    }
+    #role{
+        font-size: 21.5px;
+        padding-top: 5px;
+    }
+    #description{
+        padding-top: 5px;
+        font-size: 15px;
+    }
+    #profile-pic-container{
+        width: 450px;
+        height: 450px;
+    }
+    #profile-pic-container img{
+        width: 450px;
+        height: 450px;
+        border-radius: 100%;
+    }
+}
+@media all and (max-width: 991px) {
+    #first-name,#last-name {
+        font-size: 37px;
+    }
+    #role{
+        font-size: 16.5px;
+    }
+    #description{
+        padding-top: 20px;
+        font-size: 12.3px;
+    }
+    #profile-pic-container{
+        width: 370px;
+        height: 370px;
+    }
+    #profile-pic-container img{
+        width: 370px;
+        height: 370px;
+        border-radius: 100%;
+    }
+}
+@media all and (max-width: 767px) {
+    #description-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+    }
+    #first-name,#last-name {
+        display: none;
+    }
+    #full-name{
+        display: block;
+        font-size: 38px;
+    }
+    #role{
+        font-size: 23px;
+        padding-top: 5px;
+    }
+    #description{
+        display: none;
+    }
+    #mobile-text{
+        display: block;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    #profile-pic-container{
+        width: 350px;
+        height: 350px;
+    }
+    #profile-pic-container img{
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+    }
+}
+@media all and (max-width: 575px) {
+    #description-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+    }
+    #first-name,#last-name {
+        display: none;
+    }
+    #full-name{
+        display: block;
+        font-size: 23px;
+    }
+    #role{
+        font-size: 14px;
+    }
+    #description{
+        display: none;
+    }
+    #mobile-text{
+        display: block;
+        font-size: 13px;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    #profile-pic-container{
+        width: 300px;
+        height: 300px;
+    }
+    #profile-pic-container img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+}
+
+/*Third Page*/
+
+#first-project{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    top: 150px;
+    left: 150px;
+}
