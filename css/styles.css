@@ -146,12 +146,12 @@ nav div ion-icon{
     /*background-color: yellow;*/
     height: 180px;
     left: 0;
-    right: 0;
+    right: 60%;
     bottom: 0;
     z-index: 10;
 }
 #links div{
-    height: 33.33%;
+    height: 25%;
     padding-left: 40px;
     display: flex;
     justify-content: flex-start;
@@ -163,6 +163,30 @@ nav div ion-icon{
 }
 #links div ion-icon:hover{
     color: black;
+}
+#cv{
+    position: fixed;
+    height: 100px;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+#cv a button{
+    padding: 15px;
+    font-size: 22px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+}
+#cv a button:hover{
+    background-color: rgba(30, 144, 255, 0.85);
 }
 
 /*Pages*/
@@ -243,6 +267,45 @@ nav div ion-icon{
     font-size: 20px;
     color: rgba(0, 0, 0, 0.61);
     display: none;
+}
+#first-page-down-arrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    opacity: 0.5;
+    background-color: lightgrey;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move-arrow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+@keyframes move-arrow {
+    from,to{
+        align-items: flex-start;
+    }
+    25%{
+        align-items: center;
+    }
+    50%{
+        align-items: flex-end;
+    }
+    75%{
+        align-items: center;
+    }
+}
+#first-page-down-arrow a ion-icon{
+    font-size: 50px;
+    color: grey;
+}
+#first-page-down-arrow a ion-icon:hover{
+    color: black;
 }
 @media all and (max-width: 1399px) {
     #first-name,#last-name {
@@ -346,6 +409,10 @@ nav div ion-icon{
         height: 350px;
         border-radius: 100%;
     }
+    #cv a button{
+        padding: 10px;
+        font-size: 18px;
+    }
 }
 @media all and (max-width: 575px) {
     #description-container{
@@ -382,6 +449,16 @@ nav div ion-icon{
         width: 300px;
         height: 300px;
         border-radius: 100%;
+    }
+    #cv{
+        padding-right: 15px;
+        padding-bottom: 15px;
+        align-items: flex-end;
+    }
+    #cv a button{
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 5px;
     }
 }
 
