@@ -40,6 +40,14 @@ header div{
     align-items: center;
     font-family: 'DM Sans', sans-serif;
 }
+#header-email a{
+    color: black;
+    text-decoration: none;
+}
+#header-email a:hover{
+    color: dodgerblue;
+    text-decoration: underline;
+}
 #header-menu{
     /*background-color: lightblue;*/
     display: flex;
@@ -166,6 +174,15 @@ nav div ion-icon{
     background-image: url("../img/bg-img-2.jpg");
     background-size: cover;
     background-position: center;
+}
+#page-4, #page-5, #page-6{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    background-image: url("../img/bg-img-2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
 }
 
 /*First Page*/
@@ -370,11 +387,73 @@ nav div ion-icon{
 
 /*Third Page*/
 
-#first-project{
+#page-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-container{
     position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: yellow;
-    top: 150px;
-    left: 150px;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first-project, #second-project, #third-project, #fourth-project{
+    /*background-color: lightpink;*/
+    height: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media all and (max-width: 1399px) {
+
+}
+@media all and (max-width: 1199px) {
+    #first-project, #second-project, #third-project, #fourth-project{
+        height: 75%;
+    }
+}
+@media all and (max-width: 991px) {
+    #first-project, #second-project, #third-project, #fourth-project{
+        height: 100%;
+        padding-top: 20px;
+    }
+    .card{
+        height: 80%;
+        width: 70%;
+    }
+    #page-4, #page-5, #page-6{
+        display: block;
+    }
+}
+@media all and (max-width: 767px) {
+    #first-project, #second-project, #third-project, #fourth-project{
+        height: 100%;
+        padding-top: 20px;
+    }
+    .card{
+        height: 70%;
+        width: 70%;
+    }
+    #page-4, #page-5, #page-6{
+        display: block;
+    }
+}
+@media all and (max-width: 575px) {
+    #first-project, #second-project, #third-project, #fourth-project{
+        height: 100%;
+    }
+    .card{
+        height: 70%;
+        width: 90%;
+    }
+    #page-4, #page-5, #page-6{
+        display: block;
+    }
 }
