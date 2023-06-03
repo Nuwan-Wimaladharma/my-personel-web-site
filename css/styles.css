@@ -461,18 +461,12 @@ nav div ion-icon{
 #skill-container > div{
     width: 25%;
     height: 50%;
-    /*padding: 60px;*/
-    /*border: 1px solid black;*/
 }
 #skill-1, #skill-2, #skill-3, #skill-4{
     padding: 100px 65px 10px 65px;
-    /*padding-top: 60px;*/
-    /*padding-bottom: 10px;*/
 }
 #skill-5, #skill-6, #skill-7, #skill-8{
     padding: 10px 65px 100px 65px;
-    /*padding-bottom: 60px;*/
-    /*padding-top: 10px;*/
 }
 #skill-container > div > div{
     height: 100%;
@@ -900,7 +894,6 @@ nav div ion-icon{
 }
 #copyright{
     position: relative;
-    /*background-color: yellow;*/
     height: 40px;
     left: 0;
     bottom: 40px;
