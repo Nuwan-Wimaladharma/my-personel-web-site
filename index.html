@@ -20,6 +20,7 @@
     <!--CDN Material icon-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!--CDN jQuery-->
@@ -37,6 +38,12 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("_1G7fT2It61VfOHNX");
+        })();
+    </script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -45,9 +52,7 @@
             NUWAN
         </div>
         <div id="header-contact" class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            &nbsp;
-            +94712951059
+            nuwanwd20@gmail.com
         </div>
         <div id="header-email" class="col-0 col-sm-0 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
 
@@ -67,6 +72,8 @@
         <span><a id="skills" href="#page-2">Skills</a></span>
         <br>
         <span><a id="projects" href="#page-3">Projects</a></span>
+        <br>
+        <span><a id="contact-me" href="#page-7">Contact Me</a></span>
     </nav>
 
     <section id="links">
@@ -83,10 +90,6 @@
             <a href="https://twitter.com/nuwan_wim"><ion-icon name="logo-twitter"></ion-icon></a>
         </div>
     </section>
-
-    <div id="cv">
-        <a href="link"><button>Download CV</button></a>
-    </div>
 
     <section id="pages">
         <div id="page-1" class="row">
@@ -121,11 +124,134 @@
             <div id="profile-pic-container" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <img src="img/my_picture_2.jpeg" alt="profile-picture">
             </div>
+            </div>
             <div id="first-page-down-arrow">
                 <a href="#page-2"><ion-icon name="chevron-down-outline"></ion-icon></a>
             </div>
         </div>
         <div id="page-2">
+            <div id="skill-container" class="row">
+                <div id="skill-1" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div id="programming-languages" class="row">
+                        <div class="col-12">
+                            Programming Languages
+                        </div>
+                        <div class="col-12 row" >
+                            <div class="col-12">
+                                <img src="img/java.png" alt="">
+                                Java
+                            </div>
+                            <div class="col-12">
+                                <img src="img/js.png" alt="">
+                                Java Script
+                            </div>
+                            <div class="col-12">
+                                <img src="img/ts.png" alt="">
+                                Type Script
+                            </div>
+                            <div class="col-12">
+                                <img src="img/python.png" alt="">
+                                Python
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-2" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div id="front-end-tools" class="row">
+                        <div class="col-12">
+                            Front End Tools
+                        </div>
+                        <div class="col-12 row" >
+                            <div class="col-12">
+                                <img src="img/html.png" alt="">
+                                HTML
+                            </div>
+                            <div class="col-12">
+                                <img src="img/css.png" alt="">
+                                CSS
+                            </div>
+                            <div class="col-12">
+                                <img src="img/jquery.png" alt="">
+                                jQuery
+                            </div>
+                            <div class="col-12">
+                                <img src="img/angular.png" alt="">
+                                Angular
+                            </div>
+                            <div class="col-12">
+                                <img src="img/react.png" alt="">
+                                React
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-3" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div id="back-end-tools" class="row">
+                        <div class="col-12">
+                            Back End Tools
+                        </div>
+                        <div class="col-12 row" >
+                            <div class="col-12">
+                                <img src="img/java.png" alt="">
+                                Java SE
+                            </div>
+                            <div class="col-12">
+                                <img src="img/jakartaee.png" alt="">
+                                Jakarta EE
+                            </div>
+                            <div class="col-12">
+                                <img src="img/spring.png" alt="">
+                                Spring
+                            </div>
+                            <div class="col-12">
+                                <img src="img/spring-boot.png" alt="">
+                                Spring Boot
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-4" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div id="database-management" class="row">
+                        <div class="col-12">
+                            Database Management
+                        </div>
+                        <div class="col-12 row" >
+                            <div class="col-12">
+                                <img src="img/mysql.png" alt="">
+                                MySQL
+                            </div>
+                            <div class="col-12">
+                                <img src="img/mongodb.png" alt="">
+                                MongoDB
+                            </div>
+                            <div class="col-12">
+                                <img src="img/firebase.png" alt="">
+                                Firebase
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-5" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div></div>
+                </div>
+                <div id="skill-6" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div></div>
+                </div>
+                <div id="skill-7" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div></div>
+                </div>
+                <div id="skill-8" class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="page-2-alt-1">
+
+        </div>
+        <div id="page-2-alt-2">
+
+        </div>
+        <div id="page-2-alt-3">
 
         </div>
         <div id="page-3">
@@ -170,7 +296,7 @@
                             <p><a href="https://github.com/Nuwan-Wimaladharma/dino-game">To see the source code</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4">Dino Game<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
@@ -185,7 +311,7 @@
                             <p><a href="https://github.com/Nuwan-Wimaladharma/snake-game">To see the source code</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4">Snake Game<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
@@ -200,6 +326,68 @@
         </div>
         <div id="page-6">
 
+        </div>
+        <div id="page-7">
+            <div id="submit-form">
+                <form method="post">
+                    <div class="mb-3">
+                        <label id="name" for="input-name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="input-name" placeholder="A. B. C. Perera" required>
+                    </div>
+                    <div class="mb-3">
+                        <label id="mail" for="input-email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="input-email" placeholder="perera@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label id="contact" for="input-contact" class="form-label">Contact Number</label>
+                        <input type="text" class="form-control" id="input-contact" placeholder="+94771234567" required>
+                    </div>
+                    <div class="mb-3">
+                        <label id="message-header" for="input-message-header" class="form-label">Message Header</label>
+                        <input type="text" class="form-control" id="input-message-header" placeholder="Job Offer" required>
+                    </div>
+                    <div class="mb-3">
+                        <label id="message" for="input-message" class="form-label">Message</label>
+                        <textarea class="form-control" id="input-message" rows="10" placeholder="Hi Nuwan! .............." required></textarea>
+                    </div>
+                </form>
+                <div id="button-container">
+                    <div id="button-container-left">
+                        <button id="btn-submit" type="button" class="btn btn-primary">SEND</button>
+                        <button id="btn-reset" type="button" class="btn btn-primary">RESET</button>
+                    </div>
+                    <div id="button-container-right">
+                        <a href="#">
+                            <button id="btn-cv" type="button" class="btn btn-primary btn-lg">Download CV</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="success-toast" class="toast-container position-fixed bottom-0 top-0 start-50 translate-middle-x d-none">
+                <div id="liveToast1" class="toast p-3 mb-2 bg-success text-white" data-bs-autohide="true" data-bs-delay="1000" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Success</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Message sent successfully...!
+                    </div>
+                </div>
+            </div>
+            <div id="failed-toast" class="toast-container position-fixed bottom-0 top-0 start-50 translate-middle-x d-none">
+                <div id="liveToast2" class="toast p-3 mb-2 bg-danger text-white" data-bs-autohide="true" data-bs-delay="1000" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Failed</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Input fields cannot be empty.Try again...!
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                Copyright &copy; Nuwan Wimaladharma. All Rights Reserved.
+            </div>
         </div>
     </section>
 </body>

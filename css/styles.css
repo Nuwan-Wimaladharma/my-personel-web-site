@@ -136,7 +136,7 @@ nav div ion-icon{
 #close-icon-container{
     display: flex;
     justify-content: flex-end;
-    padding-right: 18px;
+    padding-right: 30px;
 }
 
 /*Links*/
@@ -160,33 +160,12 @@ nav div ion-icon{
 #links div ion-icon{
     font-size: 30px;
     color: #999999;
+    transition-property: font-size;
+    transition-duration: 500ms;
 }
 #links div ion-icon:hover{
     color: black;
-}
-#cv{
-    position: fixed;
-    height: 100px;
-    left: 60%;
-    right: 0;
-    bottom: 30px;
-    z-index: 9;
-    /*background-color: yellow;*/
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 40px;
-}
-#cv a button{
-    padding: 15px;
-    font-size: 22px;
-    font-family: 'DM Sans', sans-serif;
-    border-radius: 15px;
-    color: white;
-    background-color: dodgerblue;
-}
-#cv a button:hover{
-    background-color: rgba(30, 144, 255, 0.85);
+    font-size: 35px;
 }
 
 /*Pages*/
@@ -199,7 +178,24 @@ nav div ion-icon{
     background-size: cover;
     background-position: center;
 }
+#page-7{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: end;
+    background-image: url("../img/bg-img-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
 #page-4, #page-5, #page-6{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    background-image: url("../img/bg-img-2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+#page-2-alt-1, #page-2-alt-2, #page-2-alt-3{
     height: 100vh;
     width: 100vw;
     scroll-snap-align: center;
@@ -235,8 +231,8 @@ nav div ion-icon{
     align-items: center;
 }
 #profile-pic-container img{
-    width: 700px;
-    height: 700px;
+    width: 530px;
+    height: 530px;
     border-radius: 100%;
 }
 #first-name, #last-name{
@@ -450,15 +446,304 @@ nav div ion-icon{
         height: 300px;
         border-radius: 100%;
     }
-    #cv{
-        padding-right: 15px;
-        padding-bottom: 15px;
-        align-items: flex-end;
+}
+
+/*Second Page*/
+
+#skill-container{
+    position: relative;
+    /*background-color: yellow;*/
+    height: 100vh;
+    width: 100vw;
+}
+#skill-container > div{
+    width: 25%;
+    height: 50%;
+    /*padding: 60px;*/
+    /*border: 1px solid black;*/
+}
+#skill-1, #skill-2, #skill-3, #skill-4{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+#skill-5, #skill-6, #skill-7, #skill-8{
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+#skill-container > div > div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.6);
+    box-shadow: 3px 3px 6px black;
+    border-radius: 15px;
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+#skill-container > div > div:hover{
+    transform: scale(1.027);
+}
+#programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    height: 20%;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+#programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+    height: 80%;
+    width: 100%;
+}
+#programming-languages > div:last-child > div{
+    height: 25%;
+    padding: 5px;
+    font-size: 24px;
+}
+#front-end-tools > div:last-child > div{
+    height: 20%;
+    padding: 5px;
+    font-size: 24px;
+}
+#back-end-tools > div:last-child > div{
+    height: 25%;
+    padding: 5px;
+    font-size: 24px;
+}
+#database-management > div:last-child > div{
+    height: 33.33%;
+    padding: 5px;
+    font-size: 24px;
+}
+#programming-languages > div:last-child > div > img{
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+}
+#front-end-tools > div:last-child > div > img{
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+}
+#back-end-tools > div:last-child > div > img{
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+}
+#database-management > div:last-child > div > img{
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+}
+@media all and (max-width: 1399px) {
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+        height: 20%;
+        font-size: 21px;
     }
-    #cv a button{
-        padding: 8px;
-        font-size: 14px;
-        border-radius: 5px;
+    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div{
+        font-size: 21px;
+    }
+    #programming-languages > div:last-child > div > img{
+        width: 23%;
+    }
+    #front-end-tools > div:last-child > div > img{
+        width: 18%;
+    }
+    #back-end-tools > div:last-child > div > img{
+        width: 20%;
+    }
+    #database-management > div:last-child > div > img{
+        width: 30%;
+    }
+}
+@media all and (max-width: 1199px) {
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+        height: 20%;
+        font-size: 17px;
+    }
+    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div{
+        font-size: 17px;
+    }
+    #programming-languages > div:last-child > div > img{
+        width: 25%;
+    }
+    #front-end-tools > div:last-child > div > img{
+        width: 21%;
+    }
+    #back-end-tools > div:last-child > div > img{
+        width: 25%;
+    }
+    #database-management > div:last-child > div > img{
+        width: 35%;
+    }
+}
+@media all and (max-width: 991px) {
+    #skill-container div{
+        width: 50%;
+        height: 50%;
+    }
+    #page-2-alt-1{
+        display: block;
+    }
+    #skill-3, #skill-4{
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    #skill-5, #skill-6{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+        height: 20%;
+        width: 100%;
+        font-size: 26px;
+    }
+    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+        height: 80%;
+        width: 100%;
+    }
+    #programming-languages > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 24px;
+    }
+    #front-end-tools > div:last-child > div{
+        width: 100%;
+        height: 20%;
+        font-size: 24px;
+    }
+    #back-end-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 24px;
+    }
+    #database-management > div:last-child > div{
+        width: 100%;
+        height: 33.33%;
+        font-size: 24px;
+    }
+    #programming-languages > div:last-child > div > img{
+        width: 15%;
+    }
+    #front-end-tools > div:last-child > div > img{
+        width: 15%;
+    }
+    #back-end-tools > div:last-child > div > img{
+        width: 15%;
+    }
+    #database-management > div:last-child > div > img{
+        width: 25%;
+    }
+}
+@media all and (max-width: 767px) {
+    #skill-container div{
+        width: 50%;
+        height: 50%;
+    }
+    #page-2-alt-1{
+        display: block;
+    }
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+        height: 20%;
+        width: 100%;
+        font-size: 20px;
+    }
+    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+        height: 80%;
+        width: 100%;
+    }
+    #programming-languages > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 20px;
+    }
+    #front-end-tools > div:last-child > div{
+        width: 100%;
+        height: 20%;
+        font-size: 20px;
+    }
+    #back-end-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 20px;
+    }
+    #database-management > div:last-child > div{
+        width: 100%;
+        height: 33.33%;
+        font-size: 20px;
+    }
+    #programming-languages > div:last-child > div > img{
+        width: 23%;
+    }
+    #front-end-tools > div:last-child > div > img{
+        width: 20%;
+    }
+    #back-end-tools > div:last-child > div > img{
+        width: 23%;
+    }
+    #database-management > div:last-child > div > img{
+        width: 35%;
+    }
+}
+@media all and (max-width: 575px) {
+    #skill-container div{
+        width: 100%;
+        height: 50%;
+    }
+    #page-2-alt-1, #page-2-alt-2, #page-2-alt-3{
+        display: block;
+    }
+    #skill-1{
+        padding-top: 60px;
+    }
+    #skill-2, #skill-6{
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+    #skill-3, #skill-7{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+        height: 20%;
+        width: 100%;
+        font-size: 25px;
+    }
+    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+        height: 80%;
+        width: 100%;
+    }
+    #programming-languages > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 24px;
+    }
+    #front-end-tools > div:last-child > div{
+        width: 100%;
+        height: 20%;
+        font-size: 24px;
+    }
+    #back-end-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 24px;
+    }
+    #database-management > div:last-child > div{
+        width: 100%;
+        height: 33.33%;
+        font-size: 24px;
+    }
+    #programming-languages > div:last-child > div > img{
+        width: 15%;
+    }
+    #front-end-tools > div:last-child > div > img{
+        width: 15%;
+    }
+    #back-end-tools > div:last-child > div > img{
+        width: 18%;
+    }
+    #database-management > div:last-child > div > img{
+        width: 30%;
     }
 }
 
@@ -487,6 +772,14 @@ nav div ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.card{
+    box-shadow: 3px 3px 6px black;
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+.card:hover{
+    transform: scale(1.025);
 }
 @media all and (max-width: 1399px) {
 
@@ -533,4 +826,49 @@ nav div ion-icon{
     #page-4, #page-5, #page-6{
         display: block;
     }
+}
+
+/*Page 7*/
+
+#submit-form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px 100px;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#name, #mail, #contact, #message-header, #message{
+    font-size: 20px;
+    color: black;
+}
+#button-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+#button-container-left, #button-container-right{
+    display: flex;
+    gap: 15px;
+}
+@media all and (max-width: 575px) {
+    #submit-form{
+        padding: 40px 60px;
+    }
+}
+#copyright{
+    position: relative;
+    /*background-color: yellow;*/
+    height: 40px;
+    left: 0;
+    bottom: 40px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgray;
 }
