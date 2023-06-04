@@ -214,7 +214,7 @@ nav div ion-icon{
     justify-content: center;
     align-items: center;
 }
-#description-container{
+#description-container {
     position: relative;
     height: 50vh;
     /*background-color: yellow;*/
@@ -222,6 +222,17 @@ nav div ion-icon{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    animation-name: move-names;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes move-names {
+    from{
+        justify-content: flex-start;
+    }
+    to{
+        justify-content: center;
+    }
 }
 #profile-pic-container{
     position: relative;

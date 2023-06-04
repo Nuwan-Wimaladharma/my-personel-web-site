@@ -114,3 +114,52 @@ $(document).on('click', () => {
     $("html").css("scroll-snap-type","y mandatory");
     $("body").css("scroll-snap-type","y mandatory");
 });
+
+/*Animations*/
+
+const page1 = $("#page-1");
+
+const firstName = $("#first-name");
+const lastName = $("#last-name");
+const fullName = $("#full-name");
+const role = $("#role");
+const description = $("#description");
+const mobileDescription = $("#mobile-text");
+const skill1 = $("#programming-languages");
+const skill2 = $("#front-end-tools");
+const skill3 = $("#back-end-tools");
+const skill4 = $("#database-management");
+
+page1.on('click', () => {
+    console.log($(window).scrollTop.valueOf());
+    firstName.addClass('animate__fadeInDown');
+});
+
+$(document).ready(function(){
+    $(window).scroll(function (event) {
+        firstName.removeClass('animate__fadeInDown');
+        lastName.removeClass('animate__fadeInDown');
+        fullName.removeClass('animate__fadeInDown');
+        role.removeClass('animate__fadeInLeft');
+        description.removeClass('animate__fadeInUp');
+        mobileDescription.removeClass('animate__fadeInUp');
+        skill1.removeClass('animate__zoomIn');
+        skill2.removeClass('animate__zoomIn');
+        skill3.removeClass('animate__zoomIn');
+        skill4.removeClass('animate__zoomIn');
+        const sc = $(window).scrollTop();
+
+        setTimeout(() => {
+            firstName.addClass('animate__fadeInDown');
+            lastName.addClass('animate__fadeInDown');
+            fullName.addClass('animate__fadeInDown');
+            role.addClass('animate__fadeInLeft');
+            description.addClass('animate__fadeInUp');
+            mobileDescription.addClass('animate__fadeInUp');
+            skill1.addClass('animate__zoomIn');
+            skill2.addClass('animate__zoomIn');
+            skill3.addClass('animate__zoomIn');
+            skill4.addClass('animate__zoomIn');
+        },0);
+    });
+})
