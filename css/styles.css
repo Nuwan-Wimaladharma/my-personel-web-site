@@ -533,6 +533,27 @@ nav div ion-icon{
     width: 30%;
     border-radius: 5px;
 }
+@media all and (max-width: 1874px) {
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+        height: 20%;
+        font-size: 26px;
+    }
+    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div{
+        font-size: 24px;
+    }
+    #programming-languages > div:last-child > div > img{
+        width: 20%;
+    }
+    #front-end-tools > div:last-child > div > img{
+        width: 18%;
+    }
+    #back-end-tools > div:last-child > div > img{
+        width: 20%;
+    }
+    #database-management > div:last-child > div > img{
+        width: 25%;
+    }
+}
 @media all and (max-width: 1399px) {
     #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
         height: 20%;
