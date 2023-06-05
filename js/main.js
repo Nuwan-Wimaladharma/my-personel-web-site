@@ -144,9 +144,9 @@ $(document).ready(function(){
         description.removeClass('animate__fadeInUp');
         mobileDescription.removeClass('animate__fadeInUp');
         skill1.removeClass('animate__zoomIn');
-        skill2.removeClass('animate__zoomIn');
-        skill3.removeClass('animate__zoomIn');
-        skill4.removeClass('animate__zoomIn');
+        skill2.removeClass('animate__zoomIn animate__delay-1s');
+        skill3.removeClass('animate__zoomIn animate__delay-1s');
+        skill4.removeClass('animate__zoomIn animate__delay-1s');
         const sc = $(window).scrollTop();
 
         setTimeout(() => {
@@ -157,9 +157,12 @@ $(document).ready(function(){
             description.addClass('animate__fadeInUp');
             mobileDescription.addClass('animate__fadeInUp');
             skill1.addClass('animate__zoomIn');
-            skill2.addClass('animate__zoomIn');
-            skill3.addClass('animate__zoomIn');
-            skill4.addClass('animate__zoomIn');
+            skill2.addClass('animate__zoomIn animate animate__delay-1s');
+            skill2.css('--animate-delay','0.2s');
+            skill3.addClass('animate__zoomIn animate animate__delay-1s');
+            skill3.css('--animate-delay','0.3s');
+            skill4.addClass('animate__zoomIn animate animate__delay-1s');
+            skill4.css('--animate-delay','0.4s');
         },0);
     });
 })
