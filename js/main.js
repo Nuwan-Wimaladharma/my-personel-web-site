@@ -130,6 +130,11 @@ const skill2 = $("#front-end-tools");
 const skill3 = $("#back-end-tools");
 const skill4 = $("#database-management");
 
+const project1 = $("#first-project > div");
+const project2 = $("#second-project > div");
+const project3 = $("#third-project > div");
+const project4 = $("#fourth-project > div");
+
 page1.on('click', () => {
     console.log($(window).scrollTop.valueOf());
     firstName.addClass('animate__fadeInDown');
@@ -143,10 +148,16 @@ $(document).ready(function(){
         role.removeClass('animate__fadeInLeft');
         description.removeClass('animate__fadeInUp');
         mobileDescription.removeClass('animate__fadeInUp');
+
         skill1.removeClass('animate__zoomIn');
         skill2.removeClass('animate__zoomIn animate__delay-1s');
         skill3.removeClass('animate__zoomIn animate__delay-1s');
         skill4.removeClass('animate__zoomIn animate__delay-1s');
+
+        project1.removeClass('animate__zoomIn');
+        project2.removeClass('animate__zoomIn animate__delay-1s');
+        project3.removeClass('animate__zoomIn animate__delay-1s');
+        project4.removeClass('animate__zoomIn animate__delay-1s');
         const sc = $(window).scrollTop();
 
         setTimeout(() => {
@@ -156,6 +167,7 @@ $(document).ready(function(){
             role.addClass('animate__fadeInLeft');
             description.addClass('animate__fadeInUp');
             mobileDescription.addClass('animate__fadeInUp');
+
             skill1.addClass('animate__zoomIn');
             skill2.addClass('animate__zoomIn animate animate__delay-1s');
             skill2.css('--animate-delay','0.2s');
@@ -163,6 +175,14 @@ $(document).ready(function(){
             skill3.css('--animate-delay','0.3s');
             skill4.addClass('animate__zoomIn animate animate__delay-1s');
             skill4.css('--animate-delay','0.4s');
+
+            project1.addClass('animate__zoomIn');
+            project2.addClass('animate__zoomIn animate animate__delay-1s');
+            project2.css('--animate-delay','0.2s');
+            project3.addClass('animate__zoomIn animate animate__delay-1s');
+            project3.css('--animate-delay','0.3s');
+            project4.addClass('animate__zoomIn animate animate__delay-1s');
+            project4.css('--animate-delay','0.4s');
         },0);
     });
 })
