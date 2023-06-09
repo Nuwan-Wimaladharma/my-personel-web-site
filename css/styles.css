@@ -476,6 +476,7 @@ nav div ion-icon{
     border-radius: 15px;
     transition-property: transform;
     transition-duration: 500ms;
+    padding: 5px;
 }
 #skill-container > div > div:hover{
     transform: scale(1.027);
@@ -499,7 +500,7 @@ nav div ion-icon{
     font-size: 15px;
 }
 #front-end-tools > div:last-child > div{
-    height: 20%;
+    height: 16.67%;
     padding: 5px;
     font-size: 15px;
 }
@@ -546,7 +547,7 @@ nav div ion-icon{
         width: 20%;
     }
     #front-end-tools > div:last-child > div > img{
-        width: 18%;
+        width: 14%;
     }
     #back-end-tools > div:last-child > div > img{
         width: 20%;
@@ -568,7 +569,7 @@ nav div ion-icon{
         width: 34%;
     }
     #front-end-tools > div:last-child > div > img{
-        width: 30%;
+        width: 20%;
     }
     #back-end-tools > div:last-child > div > img{
         width: 33%;
@@ -604,7 +605,7 @@ nav div ion-icon{
     }
     #front-end-tools > div:last-child > div{
         width: 100%;
-        height: 20%;
+        height: 16.67%;
         font-size: 25px;
     }
     #back-end-tools > div:last-child > div{
@@ -621,7 +622,7 @@ nav div ion-icon{
         width: 15%;
     }
     #front-end-tools > div:last-child > div > img{
-        width: 12%;
+        width: 8%;
     }
     #back-end-tools > div:last-child > div > img{
         width: 15%;
@@ -661,7 +662,7 @@ nav div ion-icon{
     }
     #front-end-tools > div:last-child > div{
         width: 100%;
-        height: 20%;
+        height: 16.67%;
         font-size: 18px;
     }
     #back-end-tools > div:last-child > div{
@@ -678,7 +679,7 @@ nav div ion-icon{
         width: 20%;
     }
     #front-end-tools > div:last-child > div > img{
-        width: 15%;
+        width: 12%;
     }
     #back-end-tools > div:last-child > div > img{
         width: 20%;
@@ -718,7 +719,7 @@ nav div ion-icon{
     }
     #front-end-tools > div:last-child > div{
         width: 100%;
-        height: 20%;
+        height: 16.67%;
         font-size: 15px;
     }
     #back-end-tools > div:last-child > div{
@@ -735,7 +736,7 @@ nav div ion-icon{
         width: 35%;
     }
     #front-end-tools > div:last-child > div > img{
-        width: 33%;
+        width: 28%;
     }
     #back-end-tools > div:last-child > div > img{
         width: 33%;
@@ -778,7 +779,7 @@ nav div ion-icon{
     }
     #front-end-tools > div:last-child > div{
         width: 100%;
-        height: 20%;
+        height: 16.67%;
         font-size: 18px;
     }
     #back-end-tools > div:last-child > div{
@@ -795,7 +796,7 @@ nav div ion-icon{
         width: 20%;
     }
     #front-end-tools > div:last-child > div > img{
-        width: 18%;
+        width: 14%;
     }
     #back-end-tools > div:last-child > div > img{
         width: 20%;
