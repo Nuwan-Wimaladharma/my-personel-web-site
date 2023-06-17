@@ -134,6 +134,8 @@ const project1 = $("#first-project > div");
 const project2 = $("#second-project > div");
 const project3 = $("#third-project > div");
 const project4 = $("#fourth-project > div");
+const project5 = $("#fifth-project > div");
+const project6 = $("#sixth-project > div");
 
 page1.on('click', () => {
     console.log($(window).scrollTop.valueOf());
@@ -158,6 +160,8 @@ $(document).ready(function(){
         project2.removeClass('animate__zoomIn animate__delay-1s');
         project3.removeClass('animate__zoomIn animate__delay-1s');
         project4.removeClass('animate__zoomIn animate__delay-1s');
+        project5.removeClass('animate__zoomIn animate__delay-1s');
+        project6.removeClass('animate__zoomIn animate__delay-1s');
         const sc = $(window).scrollTop();
 
         setTimeout(() => {
@@ -183,6 +187,10 @@ $(document).ready(function(){
             project3.css('--animate-delay','0.3s');
             project4.addClass('animate__zoomIn animate animate__delay-1s');
             project4.css('--animate-delay','0.4s');
+            project5.addClass('animate__zoomIn animate animate__delay-1s');
+            project5.css('--animate-delay','0.5s');
+            project6.addClass('animate__zoomIn animate animate__delay-1s');
+            project6.css('--animate-delay','0.6s');
         },0);
     });
 })

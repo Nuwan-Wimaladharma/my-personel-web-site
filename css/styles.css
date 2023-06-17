@@ -180,7 +180,7 @@ nav div ion-icon{
     background-size: cover;
     background-position: center;
 }
-#page-7{
+#page-9{
     height: 100vh;
     width: 100vw;
     scroll-snap-align: end;
@@ -188,7 +188,7 @@ nav div ion-icon{
     background-size: cover;
     background-position: center;
 }
-#page-4, #page-5, #page-6{
+#page-4, #page-5, #page-6, #page-7, #page-8{
     height: 100vh;
     width: 100vw;
     scroll-snap-align: center;
@@ -822,18 +822,17 @@ nav div ion-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 50px;
+    padding: 85px 80px 10px 80px;
 }
-#first-project, #second-project, #third-project, #fourth-project{
+#first-project, #second-project, #third-project, #fourth-project, #fifth-project, #sixth-project{
     /*background-color: lightpink;*/
-    height: 90%;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card{
+    height: 100%;
     box-shadow: 3px 3px 6px black;
     transition-property: transform;
     transition-duration: 500ms;
@@ -845,50 +844,59 @@ nav div ion-icon{
 
 }
 @media all and (max-width: 1199px) {
-    #first-project, #second-project, #third-project, #fourth-project{
-        height: 75%;
+    #first-project, #second-project, #third-project, #fourth-project, #fifth-project, #sixth-project{
+        height: 45%;
     }
 }
 @media all and (max-width: 991px) {
-    #first-project, #second-project, #third-project, #fourth-project{
-        height: 100%;
-        padding-top: 20px;
+    #project-container{
+        padding-top: 0;
+    }
+    #first-project, #second-project, #third-project, #fourth-project, #fifth-project, #sixth-project{
+        height: 100vh;
+        padding-top: 40px;
     }
     .card{
         height: 80%;
         width: 70%;
     }
-    #page-4, #page-5, #page-6{
+    #page-4, #page-5, #page-6, #page-7, #page-8{
         display: block;
     }
 }
 @media all and (max-width: 767px) {
-    #first-project, #second-project, #third-project, #fourth-project{
-        height: 100%;
+    #project-container{
+        padding-top: 0;
+    }
+    #first-project, #second-project, #third-project, #fourth-project, #fifth-project, #sixth-project{
+        height: 100vh;
         padding-top: 20px;
     }
     .card{
         height: 70%;
         width: 70%;
     }
-    #page-4, #page-5, #page-6{
+    #page-4, #page-5, #page-6, #page-7, #page-8{
         display: block;
     }
 }
 @media all and (max-width: 575px) {
-    #first-project, #second-project, #third-project, #fourth-project{
-        height: 100%;
+    #project-container{
+        padding-top: 0;
+    }
+    #first-project, #second-project, #third-project, #fourth-project, #fifth-project, #sixth-project{
+        height: 100vh;
     }
     .card{
         height: 50%;
-        width: 95%;
+        width: 100%;
     }
-    #page-4, #page-5, #page-6{
+    #page-4, #page-5, #page-6, #page-7, #page-8{
         display: block;
     }
 }
 
-/*Page 7*/
+/*Page 9*/
 
 #submit-form{
     position: relative;
