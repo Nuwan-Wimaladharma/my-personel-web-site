@@ -129,6 +129,8 @@ const skill1 = $("#programming-languages");
 const skill2 = $("#front-end-tools");
 const skill3 = $("#back-end-tools");
 const skill4 = $("#database-management");
+const skill5 = $("#software-development-tools");
+const skill6 = $("#soft-skills");
 
 const project1 = $("#first-project > div");
 const project2 = $("#second-project > div");
@@ -155,6 +157,8 @@ $(document).ready(function(){
         skill2.removeClass('animate__zoomIn animate__delay-1s');
         skill3.removeClass('animate__zoomIn animate__delay-1s');
         skill4.removeClass('animate__zoomIn animate__delay-1s');
+        skill5.removeClass('animate__zoomIn animate__delay-1s');
+        skill6.removeClass('animate__zoomIn animate__delay-1s');
 
         project1.removeClass('animate__zoomIn');
         project2.removeClass('animate__zoomIn animate__delay-1s');
@@ -179,6 +183,10 @@ $(document).ready(function(){
             skill3.css('--animate-delay','0.3s');
             skill4.addClass('animate__zoomIn animate animate__delay-1s');
             skill4.css('--animate-delay','0.4s');
+            skill5.addClass('animate__zoomIn animate animate__delay-1s');
+            skill5.css('--animate-delay','0.5s');
+            skill6.addClass('animate__zoomIn animate animate__delay-1s');
+            skill6.css('--animate-delay','0.6s');
 
             project1.addClass('animate__zoomIn');
             project2.addClass('animate__zoomIn animate animate__delay-1s');

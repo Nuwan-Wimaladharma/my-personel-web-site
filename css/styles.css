@@ -509,7 +509,7 @@ nav div ion-icon{
 #skill-container > div > div:hover{
     transform: scale(1.027);
 }
-#programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+#programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
     height: 20%;
     /*background-color: red;*/
     display: flex;
@@ -518,7 +518,7 @@ nav div ion-icon{
     font-size: 15px;
     font-weight: bold;
 }
-#programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+#programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child, #software-development-tools > div:last-child, #soft-skills > div:last-child{
     height: 80%;
     width: 100%;
 }
@@ -533,12 +533,22 @@ nav div ion-icon{
     font-size: 15px;
 }
 #back-end-tools > div:last-child > div{
-    height: 25%;
+    height: 20%;
     padding: 5px;
     font-size: 15px;
 }
 #database-management > div:last-child > div{
     height: 33.33%;
+    padding: 5px;
+    font-size: 15px;
+}
+#software-development-tools > div:last-child > div{
+    height: 25%;
+    padding: 5px;
+    font-size: 15px;
+}
+#soft-skills > div:last-child > div{
+    height: 20%;
     padding: 5px;
     font-size: 15px;
 }
@@ -562,13 +572,23 @@ nav div ion-icon{
     width: 30%;
     border-radius: 5px;
 }
+#software-development-tools > div:last-child > div > img{
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+}
+#soft-skills > div:last-child > div > img{
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+}
 @media all and (max-width: 2000px) {
-    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
         height: 20%;
         font-size: 24px;
         text-align: center;
     }
-    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div{
+    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div, #software-development-tools > div:last-child > div, #soft-skills > div:last-child > div{
         font-size: 24px;
     }
     #programming-languages > div:last-child > div > img{
@@ -578,20 +598,26 @@ nav div ion-icon{
         width: 14%;
     }
     #back-end-tools > div:last-child > div > img{
-        width: 20%;
+        width: 16%;
     }
     #database-management > div:last-child > div > img{
         width: 25%;
     }
+    #software-development-tools > div:last-child > div > img{
+        width: 20%;
+    }
+    #soft-skills > div:last-child > div > img{
+        width: 17%;
+    }
 }
 @media all and (max-width: 1399px) {
-    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
         height: 20%;
         font-size: 20px;
         text-align: center;
     }
-    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div{
-        font-size: 16px;
+    #programming-languages > div:last-child > div, #front-end-tools > div:last-child > div, #back-end-tools > div:last-child > div, #database-management > div:last-child > div, #software-development-tools > div:last-child > div, #soft-skills > div:last-child > div{
+        font-size: 12px;
     }
     #programming-languages > div:last-child > div > img{
         width: 34%;
@@ -600,10 +626,16 @@ nav div ion-icon{
         width: 20%;
     }
     #back-end-tools > div:last-child > div > img{
-        width: 33%;
+        width: 30%;
     }
     #database-management > div:last-child > div > img{
         width: 40%;
+    }
+    #software-development-tools > div:last-child > div > img{
+        width: 32%;
+    }
+    #soft-skills > div:last-child > div > img{
+        width: 20%;
     }
 }
 @media all and (max-width: 1199px) {
@@ -623,7 +655,7 @@ nav div ion-icon{
     #skill-3, #skill-4, #skill-7, #skill-8{
         padding: 10px 65px 100px 65px;
     }
-    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
         height: 20%;
         width: 100%;
         font-size: 25px;
@@ -641,12 +673,22 @@ nav div ion-icon{
     }
     #back-end-tools > div:last-child > div{
         width: 100%;
-        height: 25%;
+        height: 20%;
         font-size: 25px;
     }
     #database-management > div:last-child > div{
         width: 100%;
         height: 33.33%;
+        font-size: 25px;
+    }
+    #software-development-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 25px;
+    }
+    #soft-skills > div:last-child > div{
+        width: 100%;
+        height: 20%;
         font-size: 25px;
     }
     #programming-languages > div:last-child > div > img{
@@ -656,10 +698,16 @@ nav div ion-icon{
         width: 8%;
     }
     #back-end-tools > div:last-child > div > img{
-        width: 15%;
+        width: 12%;
     }
     #database-management > div:last-child > div > img{
         width: 20%;
+    }
+    #software-development-tools > div:last-child > div > img{
+        width: 15%;
+    }
+    #soft-skills > div:last-child > div > img{
+        width: 12%;
     }
 }
 @media all and (max-width: 991px) {
@@ -679,13 +727,13 @@ nav div ion-icon{
     #skill-3, #skill-4, #skill-7, #skill-8{
         padding: 10px 65px 100px 65px;
     }
-    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
         height: 20%;
         width: 100%;
         font-size: 18px;
         text-align: center;
     }
-    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child, #software-development-tools > div:last-child, #soft-skills > div:last-child{
         height: 80%;
         width: 100%;
     }
@@ -701,12 +749,22 @@ nav div ion-icon{
     }
     #back-end-tools > div:last-child > div{
         width: 100%;
-        height: 25%;
+        height: 20%;
         font-size: 18px;
     }
     #database-management > div:last-child > div{
         width: 100%;
         height: 33.33%;
+        font-size: 18px;
+    }
+    #software-development-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 18px;
+    }
+    #soft-skills > div:last-child > div{
+        width: 100%;
+        height: 20%;
         font-size: 18px;
     }
     #programming-languages > div:last-child > div > img{
@@ -716,10 +774,16 @@ nav div ion-icon{
         width: 12%;
     }
     #back-end-tools > div:last-child > div > img{
-        width: 20%;
+        width: 18%;
     }
     #database-management > div:last-child > div > img{
         width: 30%;
+    }
+    #software-development-tools > div:last-child > div > img{
+        width: 20%;
+    }
+    #soft-skills > div:last-child > div > img{
+        width: 18%;
     }
 }
 @media all and (max-width: 767px) {
@@ -739,20 +803,20 @@ nav div ion-icon{
     #header-third-page{
         top: 303vh;
     }
-    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
         height: 20%;
         width: 100%;
         font-size: 16px;
         text-align: center;
     }
-    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child, #software-development-tools > div:last-child, #soft-skills > div:last-child{
         height: 80%;
         width: 100%;
     }
     #programming-languages > div:last-child > div{
         width: 100%;
         height: 25%;
-        font-size: 15px;
+        font-size: 14px;
     }
     #front-end-tools > div:last-child > div{
         width: 100%;
@@ -761,13 +825,23 @@ nav div ion-icon{
     }
     #back-end-tools > div:last-child > div{
         width: 100%;
-        height: 25%;
+        height: 20%;
         font-size: 15px;
     }
     #database-management > div:last-child > div{
         width: 100%;
         height: 33.33%;
-        font-size: 15px;
+        font-size: 14px;
+    }
+    #software-development-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 14px;
+    }
+    #soft-skills > div:last-child > div{
+        width: 100%;
+        height: 20%;
+        font-size: 10px;
     }
     #programming-languages > div:last-child > div > img{
         width: 35%;
@@ -780,6 +854,12 @@ nav div ion-icon{
     }
     #database-management > div:last-child > div > img{
         width: 42%;
+    }
+    #software-development-tools > div:last-child > div > img{
+        width: 30%;
+    }
+    #soft-skills > div:last-child > div > img{
+        width: 30%;
     }
 }
 @media all and (max-width: 575px) {
@@ -806,13 +886,13 @@ nav div ion-icon{
     #skill-2, #skill-4, #skill-6, #skill-8{
         padding: 10px 65px 100px 65px;
     }
-    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
+    #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child, #software-development-tools > div:first-child, #soft-skills > div:first-child{
         height: 20%;
         width: 100%;
         font-size: 18px;
         text-align: center;
     }
-    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child{
+    #programming-languages > div:last-child, #front-end-tools > div:last-child, #back-end-tools > div:last-child, #database-management > div:last-child, #software-development-tools > div:last-child, #soft-skills > div:last-child{
         height: 80%;
         width: 100%;
     }
@@ -828,12 +908,22 @@ nav div ion-icon{
     }
     #back-end-tools > div:last-child > div{
         width: 100%;
-        height: 25%;
+        height: 20%;
         font-size: 18px;
     }
     #database-management > div:last-child > div{
         width: 100%;
         height: 33.33%;
+        font-size: 18px;
+    }
+    #software-development-tools > div:last-child > div{
+        width: 100%;
+        height: 25%;
+        font-size: 18px;
+    }
+    #soft-skills > div:last-child > div{
+        width: 100%;
+        height: 20%;
         font-size: 18px;
     }
     #programming-languages > div:last-child > div > img{
@@ -843,10 +933,16 @@ nav div ion-icon{
         width: 14%;
     }
     #back-end-tools > div:last-child > div > img{
-        width: 20%;
+        width: 18%;
     }
     #database-management > div:last-child > div > img{
         width: 32%;
+    }
+    #software-development-tools > div:last-child > div > img{
+        width: 22%;
+    }
+    #soft-skills > div:last-child > div > img{
+        width: 20%;
     }
 }
 
