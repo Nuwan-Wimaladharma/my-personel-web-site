@@ -13,6 +13,34 @@ header{
     opacity: 0.6;
     z-index: 10;
 }
+#header-first-page, #header-second-page, #header-fourth-page, #header-second-page-alt-1, #header-second-page-alt-2, #header-second-page-alt-3
+,#header-third-page-alt-1, #header-third-page-alt-2, #header-third-page-alt-3, #header-third-page-alt-4, #header-third-page-alt-5{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Goldman', sans-serif;
+    font-size: 3rem;
+    z-index: 9;
+}
+#header-third-page{
+    position: absolute;
+    top: 203vh;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Goldman', sans-serif;
+    font-size: 3rem;
+    z-index: 9;
+}
 header div{
     height: 100%;
 }
@@ -586,6 +614,9 @@ nav div ion-icon{
     #page-2-alt-1{
         display: block;
     }
+    #header-third-page{
+        top: 303vh;
+    }
     #skill-1, #skill-2, #skill-5, #skill-6{
         padding: 100px 65px 10px 65px;
     }
@@ -638,6 +669,9 @@ nav div ion-icon{
     }
     #page-2-alt-1{
         display: block;
+    }
+    #header-third-page{
+        top: 303vh;
     }
     #skill-1, #skill-2, #skill-5, #skill-6{
         padding: 100px 65px 10px 65px;
@@ -702,6 +736,9 @@ nav div ion-icon{
     #page-2-alt-1{
         display: block;
     }
+    #header-third-page{
+        top: 303vh;
+    }
     #programming-languages > div:first-child, #front-end-tools > div:first-child, #back-end-tools > div:first-child, #database-management > div:first-child{
         height: 20%;
         width: 100%;
@@ -752,6 +789,13 @@ nav div ion-icon{
     }
     #page-2-alt-1, #page-2-alt-2, #page-2-alt-3{
         display: block;
+    }
+    #header-third-page{
+        top: 503vh;
+    }
+    #header-first-page, #header-second-page, #header-second-page-alt-1, #header-second-page-alt-2, #header-second-page-alt-3, #header-third-page,
+    #header-third-page-alt-1, #header-third-page-alt-2, #header-third-page-alt-3, #header-third-page-alt-4, #header-third-page-alt-5, #header-fourth-page{
+        font-size: 1.2rem;
     }
     #skill-1{
         padding-top: 60px;
